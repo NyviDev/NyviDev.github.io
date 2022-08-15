@@ -1,51 +1,192 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/Poppins-Regular.ttf");
+}
 * {
-  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins";
 }
 
-body {
-  background-color: #fff3e4;
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  padding: 2rem;
+  height: 510px;
+  background-color: #c4e8e9;
 }
-
-h1 {
-  text-align: center;
-  font-size: 40px;
+.description img {
+  border-radius: 50%;
+  border: solid 5px #f4ac45;
+  height: 150px;
+}
+.description .desc-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+.description .desc-main h1 {
+  margin-top: 8px;
+  font-size: 25px;
   text-transform: uppercase;
+  text-align: center;
+}
+.description .desc-main h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #694a38;
+  font-size: 16px;
+}
+.description .desc-main p {
+  text-align: center;
+  max-width: 500px;
+  margin: 20px 0;
+}
+.description .desc-main .desc-btn {
+  background-color: #694a38;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 111px;
+  cursor: pointer;
+}
+.description .desc-main .desc-btn:hover {
+  transition: all 0.3s linear;
+  background-color: #f4ac45;
+  outline: 3px solid #694a38;
+  outline-offset: -2px;
+  color: #694a38;
+}
+.description .desc-main .desc-btn:hover a {
+  color: #694a38;
+}
+.description .desc-main .desc-btn a {
+  text-decoration: none;
+  color: #dad6d6;
 }
 
-.container {
+.experience {
+  background-color: #a61c3c;
+}
+.experience h1 {
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #c4e8e9;
+}
+.experience .exp-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4ac45;
+  padding: 5px;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  gap: 20px;
+}
+.experience .exp-btns button {
+  border: none;
+  border-radius: 20px;
+  width: 50%;
+  background-color: #f4ac45;
+}
+.experience .exp-btns button:hover {
+  cursor: pointer;
+  background-color: #694a38;
+  color: #dad6d6;
+}
+.experience .exp-btns .exp-btn {
+  background-color: #694a38;
+  color: #dad6d6;
+}
+.experience .projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 30px 0;
 }
-
-.container p {
-  max-width: 700px;
-  font-size: 15px;
-  letter-spacing: 2px;
-  line-height: 30px;
+.experience .projects .project-article {
+  margin: 0 2rem 30px 2rem;
+  max-width: 500px;
+  background-color: #dad6d6;
+  border-radius: 10px 10px 0 0;
 }
-
-ul {
-  background-color: #fff;
-  border: solid 1px #000;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 700px;
-  width: 400px;
-  list-style: none;
+.experience .projects .project-article h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 0;
+  border-bottom: dashed 1px;
+  background-color: #c4e8e9;
+  border-radius: 8px 8px 0 0;
 }
-ul a {
-  font-size: 18px;
-  color: var(--bg-yellow);
+.experience .projects .project-article h3:hover {
+  transition: all 0.3s linear;
+  background-color: #694a38;
+}
+.experience .projects .project-article h3:hover a {
+  color: #dad6d6;
+}
+.experience .projects .project-article p {
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.experience .projects .project-article a {
   text-decoration: none;
+  color: #000;
 }
-ul a:hover {
-  color: rgba(5, 93, 255, 0.726);
+.experience .projects .project-article .link {
+  color: #694a38;
 }
-ul li {
-  color: var(--bg-yellow);
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-align: start;
+.experience .professional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 960px) {
+  .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .description img {
+    height: 350px;
+  }
+  .description .desc-main {
+    max-width: 600px;
+    min-width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description {
+    gap: 10rem;
+  }
+  .description .desc-main h1 {
+    margin-top: 0;
+  }
+  .description .desc-main p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .experience .projects {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .experience .projects .project-article {
+    width: 45vw;
+  }
 }/*# sourceMappingURL=style.css.map */
