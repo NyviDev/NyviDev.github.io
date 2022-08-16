@@ -129,7 +129,8 @@ $vivid-burgundy: #a61c3cff;
 
     .projects {
         @include flexContainer(flex, column, center, center);
-        margin: 30px 0;
+        margin-top: 30px;
+
         .project-article {
             margin: 0 2rem 30px 2rem;
             max-width: 500px;
@@ -173,8 +174,78 @@ $vivid-burgundy: #a61c3cff;
 
     .professional {
         @include flexContainer(flex, column, center, center);
-        margin: 30px 0;
+        margin-top: 30px;
+
+        .article-context {
+            text-align: center;
+            background-color: $light-gray;
+            max-width: 500px;
+            border-radius: 10px 10px 0 0;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+
+            h3 {
+                padding-top: 8px;
+                background-color: $cambridge-blue;
+                border-radius: 8px 8px 0 0;
+
+            }
+
+            h4 {
+                background-color: $cambridge-blue;
+                border-bottom: dashed 1px;
+                padding-bottom: 8px;
+                color: $coffee;
+            }
+
+            p {
+                padding: 0 20px;
+                padding-top: 15px;
+                font-size: 16px;
+            }
+
+        }
     }
+
+    .education {
+        @include flexContainer(flex, column, center, center);
+        margin-top: 30px;
+
+        .article-context {
+            text-align: center;
+            background-color: $light-gray;
+            width: 500px;
+            border-radius: 10px 10px 0 0;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+
+            h3 {
+                padding-top: 8px;
+                background-color: $cambridge-blue;
+                border-radius: 8px 8px 0 0;
+
+            }
+
+            h4 {
+                background-color: $cambridge-blue;
+                border-bottom: dashed 1px;
+                padding-bottom: 8px;
+                color: $coffee;
+            }
+
+            p {
+                padding: 0 20px;
+                padding-top: 15px;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .hide-articles{
+        display: none;
+    }
+
 }
 
 @media screen and(min-width: 960px) {

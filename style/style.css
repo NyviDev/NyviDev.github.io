@@ -110,7 +110,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  margin-top: 30px;
 }
 .experience .projects .project-article {
   margin: 0 2rem 30px 2rem;
@@ -150,7 +150,65 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  margin-top: 30px;
+}
+.experience .professional .article-context {
+  text-align: center;
+  background-color: #dad6d6;
+  max-width: 500px;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.experience .professional .article-context h3 {
+  padding-top: 8px;
+  background-color: #c4e8e9;
+  border-radius: 8px 8px 0 0;
+}
+.experience .professional .article-context h4 {
+  background-color: #c4e8e9;
+  border-bottom: dashed 1px;
+  padding-bottom: 8px;
+  color: #694a38;
+}
+.experience .professional .article-context p {
+  padding: 0 20px;
+  padding-top: 15px;
+  font-size: 16px;
+}
+.experience .education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.experience .education .article-context {
+  text-align: center;
+  background-color: #dad6d6;
+  width: 500px;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.experience .education .article-context h3 {
+  padding-top: 8px;
+  background-color: #c4e8e9;
+  border-radius: 8px 8px 0 0;
+}
+.experience .education .article-context h4 {
+  background-color: #c4e8e9;
+  border-bottom: dashed 1px;
+  padding-bottom: 8px;
+  color: #694a38;
+}
+.experience .education .article-context p {
+  padding: 0 20px;
+  padding-top: 15px;
+  font-size: 16px;
+}
+.experience .hide-articles {
+  display: none;
 }
 
 @media screen and (min-width: 960px) {
