@@ -90,6 +90,7 @@ $vivid-burgundy: #a61c3cff;
 
 .experience {
     background-color: $vivid-burgundy;
+    padding: 0 2rem;
 
     h1 {
         padding-top: 50px;
@@ -132,7 +133,7 @@ $vivid-burgundy: #a61c3cff;
         margin-top: 30px;
 
         .project-article {
-            margin: 0 2rem 30px 2rem;
+            margin-bottom: 30px;
             max-width: 500px;
             background-color: $light-gray;
             border-radius: 10px 10px 0 0;
@@ -175,13 +176,13 @@ $vivid-burgundy: #a61c3cff;
     .professional {
         @include flexContainer(flex, column, center, center);
         margin-top: 30px;
-
         .article-context {
             text-align: center;
-            background-color: $light-gray;
+            margin-bottom: 30px;
             max-width: 500px;
+            background-color: $light-gray;
             border-radius: 10px 10px 0 0;
-            padding-bottom: 15px;
+
 
             h3 {
                 padding-top: 8px;
@@ -211,13 +212,13 @@ $vivid-burgundy: #a61c3cff;
         margin-top: 30px;
 
         .article-context {
-            margin: 0 2rem 30px 2rem;
+            margin-bottom: 30px;
             text-align: center;
             background-color: $light-gray;
-            width: 100%;
             max-width: 500px;
             border-radius: 10px 10px 0 0;
             padding-bottom: 15px;
+            width: 100%;
 
             h3 {
                 padding-top: 8px;
@@ -288,7 +289,7 @@ $vivid-burgundy: #a61c3cff;
             flex-direction: row;
             align-items: stretch;
             align-content: stretch;
-
+            gap: 40px;
             .project-article {
                 width: 45vw;
 

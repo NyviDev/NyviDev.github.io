@@ -70,6 +70,7 @@
 
 .experience {
   background-color: #a61c3c;
+  padding: 0 2rem;
 }
 .experience h1 {
   padding-top: 50px;
@@ -113,7 +114,7 @@
   margin-top: 30px;
 }
 .experience .projects .project-article {
-  margin: 0 2rem 30px 2rem;
+  margin-bottom: 30px;
   max-width: 500px;
   background-color: #dad6d6;
   border-radius: 10px 10px 0 0;
@@ -154,10 +155,10 @@
 }
 .experience .professional .article-context {
   text-align: center;
-  background-color: #dad6d6;
+  margin-bottom: 30px;
   max-width: 500px;
+  background-color: #dad6d6;
   border-radius: 10px 10px 0 0;
-  padding-bottom: 15px;
 }
 .experience .professional .article-context h3 {
   padding-top: 8px;
@@ -183,13 +184,13 @@
   margin-top: 30px;
 }
 .experience .education .article-context {
-  margin: 0 2rem 30px 2rem;
+  margin-bottom: 30px;
   text-align: center;
   background-color: #dad6d6;
-  width: 100%;
   max-width: 500px;
   border-radius: 10px 10px 0 0;
   padding-bottom: 15px;
+  width: 100%;
 }
 .experience .education .article-context h3 {
   padding-top: 8px;
@@ -243,6 +244,7 @@
     flex-direction: row;
     align-items: stretch;
     align-content: stretch;
+    gap: 40px;
   }
   .experience .projects .project-article {
     width: 45vw;
