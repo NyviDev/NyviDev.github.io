@@ -158,7 +158,6 @@
   max-width: 500px;
   border-radius: 10px 10px 0 0;
   padding-bottom: 15px;
-  margin-bottom: 30px;
 }
 .experience .professional .article-context h3 {
   padding-top: 8px;
@@ -184,12 +183,13 @@
   margin-top: 30px;
 }
 .experience .education .article-context {
+  margin: 0 2rem 30px 2rem;
   text-align: center;
   background-color: #dad6d6;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 10px 10px 0 0;
   padding-bottom: 15px;
-  margin-bottom: 30px;
 }
 .experience .education .article-context h3 {
   padding-top: 8px;

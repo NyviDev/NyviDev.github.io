@@ -182,7 +182,6 @@ $vivid-burgundy: #a61c3cff;
             max-width: 500px;
             border-radius: 10px 10px 0 0;
             padding-bottom: 15px;
-            margin-bottom: 30px;
 
             h3 {
                 padding-top: 8px;
@@ -212,12 +211,13 @@ $vivid-burgundy: #a61c3cff;
         margin-top: 30px;
 
         .article-context {
+            margin: 0 2rem 30px 2rem;
             text-align: center;
             background-color: $light-gray;
-            width: 500px;
+            width: 100%;
+            max-width: 500px;
             border-radius: 10px 10px 0 0;
             padding-bottom: 15px;
-            margin-bottom: 30px;
 
             h3 {
                 padding-top: 8px;
