@@ -32,12 +32,12 @@
     <section class="experience">
         <h1>Experiências</h1>
         <div class="exp-btns">
-            <button class="btn exp-btn" id="btnProject">Projetos</button>
-            <button class="btn" id="btnProfessional">Profissional</button>
-            <button class="btn" id="btnEducation">Formação</button>
+            <button class="btn active" data-id="project">Projetos</button>
+            <button class="btn" data-id="professional">Profissional</button>
+            <button class="btn" data-id="education">Formação</button>
 
         </div>
-        <div class="projects">
+        <div class="experience-content projects active" id="project">
             <article class="project-article">
                 <h3><a href="https://nyvidev.github.io/40-projects-js/" target="_blank">40 projects Js</a></h3>
                 <p><a href="https://nyvidev.github.io/40-projects-js/" target="_blank">Nesse projeto, realizo 40 exercícios de JavaScript para iniciantes proposto em um artigo da FreeCodeCamp. O material é composto por problemas como: navbar responsiva, manipulação de objetos, filtros e até criação de jogos usando as tecnologias de JavaScript, TypeScript e React.js.</a></p>
@@ -79,7 +79,12 @@
             </article>
         </div>
 
-        <div class="professional hide-articles">
+        <div class="experience-content professional" id="professional">
+            <article class="article-context">
+                <h3>Desenvolvedora Front-End Júnior</h3>
+                <h4>Livre e Leve - setembro a outubro 2022</h4>
+                <p>Utilizando a Vtex como a plataforma de ecommerce, trabalhei na manutenção e criação de páginas para o site da empresa.</p>
+            </article>
             <article class="article-context">
                 <h3>Jovem aprendiz como Assistente Administrativo</h3>
                 <h4>Nova Faol - julho de 2021 a junho de 2022</h4>
@@ -99,7 +104,7 @@
             </article>
         </div>
 
-        <div class="education hide-articles">
+        <div class="experience-content education" id="education">
             <article class="article-context">
                 <h3>Centro Federal de Educação Tecnológica Celso
                     Suckow da Fonseca</h3>

@@ -102,7 +102,8 @@
   background-color: #694a38;
   color: #dad6d6;
 }
-.experience .exp-btns .exp-btn {
+.experience .exp-btns .active {
+  display: block;
   background-color: #694a38;
   color: #dad6d6;
 }
@@ -112,6 +113,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  display: none;
 }
 .experience .projects .project-article {
   margin-bottom: 30px;
@@ -152,6 +154,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  display: none;
 }
 .experience .professional .article-context {
   text-align: center;
@@ -182,6 +185,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  display: none;
 }
 .experience .education .article-context {
   margin-bottom: 30px;
@@ -208,8 +212,8 @@
   padding-top: 15px;
   font-size: 16px;
 }
-.experience .hide-articles {
-  display: none;
+.experience .active {
+  display: flex;
 }
 
 @media screen and (min-width: 960px) {

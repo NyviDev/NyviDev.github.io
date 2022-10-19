@@ -1,42 +1,21 @@
-const btns = document.querySelectorAll('.btn')
-const btnProject = document.querySelector('#btnProject')
-const btnProfessional = document.querySelector('#btnProfessional')
-const btnEducation = document.querySelector('#btnEducation')
+const experience = document.querySelector(".experience");
+const btns = document.querySelectorAll(".btn");
+const experienceContent = document.querySelectorAll(".experience-content");
 
-const projects = document.querySelector('.projects');
-const professional = document.querySelector('.professional');
-const education = document.querySelector('.education')
+experience.addEventListener("click", (e) => {
+    const dataId = e.target.dataset.id;
 
-btns.forEach((btn => {
-    btn.addEventListener('click', (e) => {
-        const opition = e.currentTarget.textContent;
+    if (dataId) {
+        btns.forEach((button) => {
+            button.classList.remove("active")
+            e.target.classList.add("active")
+        })
 
-        if (opition === "Projetos") {
-            btnProject.classList.add('exp-btn')
-            btnProfessional.classList.remove('exp-btn')
-            btnEducation.classList.remove('exp-btn');
+        experienceContent.forEach((content) => {
+            content.classList.remove("active");
+        })
 
-            projects.classList.remove('hide-articles')
-            professional.classList.add('hide-articles')
-            education.classList.add('hide-articles')
-        } else if (opition === "Profissional") {
-            btnProfessional.classList.add('exp-btn')
-            btnProject.classList.remove('exp-btn')
-            btnEducation.classList.remove('exp-btn');
-
-            professional.classList.remove('hide-articles')
-            projects.classList.add('hide-articles')
-            education.classList.add('hide-articles')
-        } else if (opition === "Formação") {
-            btnEducation.classList.add('exp-btn')
-            btnProject.classList.remove('exp-btn')
-            btnProfessional.classList.remove('exp-btn');
-
-            education.classList.remove('hide-articles')
-            projects.classList.add('hide-articles')
-            professional.classList.add('hide-articles')
-        }
-
-
-    })
-}))
+        const element = document.getElementById(dataId);
+        element.classList.add("active");
+    }
+})
