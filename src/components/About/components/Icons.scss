@@ -1,0 +1,21 @@
+@import "../../../styles/all.scss";
+
+.icons-container {
+    margin-top: 30px;
+    @include display(row, center, center);
+    gap: 24px;
+
+    @include mq($sm, max) {
+        gap: 15px;
+    }
+
+    .icon {
+        font-size: 4rem;
+        color: $red;
+        cursor: pointer;
+
+        @include mq($sm, max) {
+            font-size: 2.7rem;
+        }
+    }
+}

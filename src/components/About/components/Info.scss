@@ -1,0 +1,41 @@
+@import "../../../styles/all.scss";
+
+.description {
+  &__name {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+
+    @include mq($md, max) {
+      font-size: 30px;
+    }
+  }
+
+  &__job {
+    text-align: center;
+    font-size: 21px;
+    // text-transform: uppercase;
+    // margin-top: 5px;
+    color: $brown;
+    margin-bottom: 30px;
+
+    @include mq($md, max) {
+      font-size: 18px;
+    }
+  }
+
+  &__content {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-align: justify;
+
+    @include mq($lg, max) {
+      max-width: 500px;
+    }
+    @include mq($sm, max) {
+      max-width: none;
+    }
+  }
+}

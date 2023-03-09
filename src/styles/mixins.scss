@@ -1,0 +1,12 @@
+@mixin mq($width, $type) {
+    @media only screen and (#{$type}-width: $width) {
+        @content;
+    }
+}
+
+@mixin display($fd, $al, $jc) {
+    display: flex;
+    flex-direction: $fd;
+    align-items: $al;
+    justify-content: $jc;
+  }

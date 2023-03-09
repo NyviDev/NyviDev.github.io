@@ -1,0 +1,46 @@
+@import "../../styles/all.scss";
+
+.header {
+  @include display(row, center, center);
+  height: 50px;
+  background-color: $brown;
+  padding: 0 30px;
+
+  @include mq($md, max) {
+    padding: 0 16px;
+    
+  }
+
+  &__links-container {
+    height: 100%;
+    @include display(row, center, flex-end);
+    @include mq($md, max) {
+      justify-content: center;
+      
+    }
+  }
+
+  &__link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    &:hover {
+      background-color: $black-opacity;
+      color: $brown;
+    }
+  }
+
+  &__link-content {
+    color: $off-white;
+    padding: 13px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    @include mq($md, max) {
+      font-size: 15px;
+      
+    }
+  }
+}

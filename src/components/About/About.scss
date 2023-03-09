@@ -1,0 +1,13 @@
+@import "../../styles/all.scss";
+
+.about {
+  @include display(row, center, center);
+    background: rgb(196,232,233);
+    // background: linear-gradient(170deg, rgba(196,232,233,1) 80%, rgba(166,28,60,1) 100%);
+  
+  @include mq($md, max) {
+    height: 100%;
+  }
+
+  
+}
