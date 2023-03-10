@@ -5,6 +5,9 @@
   height: 50px;
   background-color: $brown;
   padding: 0 30px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
 
   @include mq($md, max) {
     padding: 0 16px;
@@ -42,9 +45,6 @@
     svg {
       display: block;
       font-size: 30px;
-      @include mq($md, max) {
-        font-size: 15px;
-      }
     }
   }
 }

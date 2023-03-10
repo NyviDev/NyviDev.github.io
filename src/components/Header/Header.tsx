@@ -24,7 +24,6 @@ const Header = () => {
               content={<AiFillLinkedin />}
               href="https://www.linkedin.com/in/nicolly-vieira-dev/"
               title="LinkedIn"
-
             />,
             <Link
               content={<MdContactPage />}
