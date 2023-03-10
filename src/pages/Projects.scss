@@ -1,0 +1,105 @@
+@import "../styles/all.scss";
+
+.projects {
+  &__wrapper {
+    // @include display(row, center, center);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    justify-content: center;
+    gap: 10px;
+    width: 85vw;
+
+    @include mq($xl, max) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include mq($md, max) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mq($sm, max) {
+      grid-template-columns: minmax(90%, 400px);
+    }
+  }
+
+  &__title {
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: $blue;
+  }
+
+  &__container {
+    width: 100%;
+    // padding: 15px;
+    border-radius: 8px;
+    // box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+    background-color: rgb(226, 226, 226);
+    @include display(column, center, flex-start);
+  }
+
+  &__title-card {
+    // // overflow: hidden;
+    // border-radius: 8px 8px 0 0;
+    // // background-color: $brown;
+    // border-bottom: 2px dotted $blue;
+    // padding: 15px 0;
+    // color: $brown;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 8px;
+    border-bottom: dashed 1px;
+    background-color: $blue;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &__description {
+    @include display(column, center, center);
+    color: $black;
+    padding: 16px;
+    text-align: justify;
+    flex: 1;
+  }
+
+  &__links-container {
+    @include display(row, center, center);
+    margin-bottom: 16px;
+    gap: 10px;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 20px;
+      color: $red;
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    color: $red;
+    font-weight: 600;
+    position: relative;
+    &::after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: -2px;
+      content: "";
+      display: block;
+      height: 2px;
+      right: 100%;
+      position: absolute;
+      background-color: $red;
+      transition: width 0.3s ease 0s, right 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover::after {
+      width: 100%;
+      right: 0;
+    }
+  }
+}

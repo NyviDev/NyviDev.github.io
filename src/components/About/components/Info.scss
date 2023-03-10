@@ -3,12 +3,8 @@
 .description {
   &__name {
     text-align: center;
-    font-size: 45px;
+    font-size: 30px;
     text-transform: uppercase;
-
-    @include mq($md, max) {
-      font-size: 30px;
-    }
   }
 
   &__job {

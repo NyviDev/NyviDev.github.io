@@ -1,0 +1,7 @@
+@import "../styles/all.scss";
+
+.menu-details {
+  @include display(row, center, center);
+  background: $red;
+  padding: 50px 30px;
+}

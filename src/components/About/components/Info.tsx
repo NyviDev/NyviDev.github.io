@@ -17,7 +17,7 @@ const Info = () => {
         </p>
         <p className="description__content">
           Também possuo conhecimentos em: Java, API, Banco de Dados(SQL), Figma,
-          Metodogias Ageis, Git e GitHub
+          Metodogias Ágeis, Git e GitHub
         </p>
         <p className="description__content">
           Estou sempre em busca de novos conhecimentos e aperfeiçoar os que já

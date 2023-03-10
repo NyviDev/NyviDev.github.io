@@ -10,12 +10,12 @@
     }
 
     .icon {
-        font-size: 4rem;
+        font-size: 60px;
         color: $red;
         cursor: pointer;
 
         @include mq($sm, max) {
-            font-size: 2.7rem;
+            font-size: 40px;
         }
     }
 }

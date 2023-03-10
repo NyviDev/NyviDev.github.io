@@ -1,0 +1,29 @@
+@import "../../styles/all.scss";
+
+.menu {
+  // min-width: 348px;
+  padding-bottom: 30px;
+  &__ul-container {
+    @include display(row, center, center);
+    background-color: $orange;
+    padding: 5px;
+    border-radius: 20px;
+  }
+
+  &__li-link {
+    @include display(row, center, center);
+    min-width: 115px;
+    .link {
+      text-align: center;
+      color: $white;
+      border-radius: 15px;
+      font-size: 18px;
+      padding: 5px 10px;
+      width: 100%;
+
+      &.active {
+        background-color: $brown;
+      }
+    }
+  }
+}
