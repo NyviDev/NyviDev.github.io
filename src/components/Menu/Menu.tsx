@@ -12,7 +12,7 @@ const Menu = () => {
         contentLi={[
           // <NavLink to={"/"} className="link">Experiência</NavLink>,
           // <NavLink to={"/courses"} className="link">Cursos</NavLink>,
-          <NavLink to={"/projects"} className="link">Projetos</NavLink>,
+          <NavLink to={"/"} className="link">Projetos</NavLink>,
         ]}
       />
     </nav>

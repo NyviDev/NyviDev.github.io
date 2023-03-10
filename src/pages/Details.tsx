@@ -9,9 +9,9 @@ const Details = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Carrers />} />
+        <Route path="/carrers" element={<Carrers />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/" element={<Projects />} />
       </Routes>
     </div>
   );
