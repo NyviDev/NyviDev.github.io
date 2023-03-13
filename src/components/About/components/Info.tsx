@@ -16,13 +16,12 @@ const Info = () => {
           Tenho experiência com React, TypeScript, SASS e plataforma VTEX.
         </p>
         <p className="description__content">
-          Também possuo conhecimentos em: Java, API, Banco de Dados(SQL), Figma,
+          Também possuo conhecimentos em: Java, API, Banco de Dados (SQL), Figma,
           Metodogias Ágeis, Git e GitHub
         </p>
         <p className="description__content">
-          Estou sempre em busca de novos conhecimentos e aperfeiçoar os que já
-          sei. Me considero uma pessoa com facilidade de aprender, portanto
-          aprender uma nova tecnologia não será um problema!
+          Estou sempre em busca de novos conhecimentos e de aperfeiçoar os que já
+          sei. Possuo o perfil analítico e lógico, facilitando o meu desempenho diante de novos desafios, portanto, aprender uma nova tecnologia não será um problema!
         </p>
       </div>
       <Icons />
