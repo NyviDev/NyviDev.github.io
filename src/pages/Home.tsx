@@ -12,7 +12,7 @@ const Home = () => {
       <div className="menu-details">
         <div className="wrapper center">
           <BrowserRouter>
-            <Menu />
+            {/* <Menu /> */}
             <Details />
           </BrowserRouter>
         </div>
