@@ -14,7 +14,7 @@ const Header = () => {
     
     window.addEventListener("scroll", () => {
       if (about) {
-      if (window.scrollY > about.clientHeight) {
+      if (window.scrollY > (about.clientHeight - 50)) {
         header.current?.classList.add("blue");
 
         if (liContainers) {

@@ -29,6 +29,8 @@
 
     @include mq($lg, max) {
       max-width: 500px;
+      line-height: 21px;
+      font-size: 15px;
     }
     @include mq($sm, max) {
       max-width: none;

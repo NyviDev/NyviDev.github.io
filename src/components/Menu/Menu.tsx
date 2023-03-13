@@ -10,9 +10,13 @@ const Menu = () => {
         classNameUl="menu__ul-container"
         classNameLi="menu__li-link"
         contentLi={[
-          // <NavLink to={"/"} className="link">Experiência</NavLink>,
           // <NavLink to={"/courses"} className="link">Cursos</NavLink>,
-          <NavLink to={"/"} className="link">Projetos</NavLink>,
+          <NavLink to={"/"} className="link">
+            Projetos
+          </NavLink>,
+          <NavLink to={"/carrers"} className="link">
+            Experiência
+          </NavLink>,
         ]}
       />
     </nav>

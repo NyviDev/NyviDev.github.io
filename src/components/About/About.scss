@@ -3,7 +3,47 @@
 .about {
   @include display(row, center, center);
   background: $blue;
-  min-height: 600px;
+  // min-height: 600px;
   padding-top: 50px;
+  height: 100vh;
+  position: relative;
+  @include mq($md, max) {
+    height: auto;
+  }
+ 
 
+  .arrow-pulse-down {
+    color: $brown;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+    animation: arrow-pulse-down 1s linear infinite;
+
+    @include mq($md, max) {
+      display: none;
+    }
+  }
+  @keyframes arrow-pulse-down {
+    0% {
+      bottom: 25px;
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      bottom: 5px;
+      opacity: 1;
+    }
+  }
 }

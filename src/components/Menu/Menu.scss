@@ -15,14 +15,15 @@
     min-width: 115px;
     .link {
       text-align: center;
-      color: $white;
       border-radius: 15px;
       font-size: 18px;
       padding: 5px 10px;
       width: 100%;
+      color: $black;
 
       &.active {
         background-color: $brown;
+        color: $white;
       }
     }
   }
