@@ -3,10 +3,10 @@
 .profile-picture {
     border-radius: 50%;
     border: 5px solid $orange;
+    width: 350px;
 
-    @include mq($xl, max) {
-      width: 350px;
-    }
+    // @include mq($xl, max) {
+    // }
     @include mq($md, max) {
       width: 250px;
     }
